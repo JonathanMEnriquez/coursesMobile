@@ -12,6 +12,7 @@ import CoreData
 class CoursesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddViewControllerDelegate {
     
     @IBOutlet var myTableView: UITableView!
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){}
     
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -23,17 +24,21 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         course.title = title
         course.desc = desc
         
-        if managedObjectContext.hasChanges {
-            do {
-                try managedObjectContext.save()
-                print("saved")
-            } catch {
-                print(error)
-            }
-        }
+        saveContext()
         
         dismiss(animated: true, completion: nil)
         fetchAllItemsandReload()
+    }
+    
+    func editCourse(title: String, desc: String, indexPath: IndexPath){
+        
+        let course = courseArray[indexPath.row]
+        course.title = title
+        course.desc = desc
+        
+        saveContext()
+        fetchAllItemsandReload()
+        dismiss(animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,6 +62,11 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         fetchAllItemsandReload()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "AddEditSegue", sender: indexPath)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell", for: indexPath) as! CustomCell
@@ -78,6 +88,18 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         myTableView.reloadData()
     }
+    
+    func saveContext() {
+        
+        if managedObjectContext.hasChanges {
+            do {
+                try managedObjectContext.save()
+                print("saved")
+            } catch {
+                print(error)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +113,22 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
     
         let destination = segue.destination as! AddViewController
         destination.delegate = self
+        if let s = sender as? UIBarButtonItem {
+            
+            destination.header = "Add a New Course"
+            destination.courseName = nil
+            destination.myDesc = nil
+            destination.indexPath = nil
+        }
+        else {
+            destination.header = "Edit Your Course"
+            let indexPath = sender as! NSIndexPath
+            let myCourse = courseArray[indexPath.row]
+            destination.courseName = myCourse.title
+            destination.myDesc = myCourse.desc
+            destination.indexPath = indexPath as IndexPath
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,4 +11,5 @@ import Foundation
 protocol AddViewControllerDelegate {
     
     func addCourse(title: String, desc: String)
+    func editCourse(title: String, desc: String, indexPath: IndexPath)
 }
