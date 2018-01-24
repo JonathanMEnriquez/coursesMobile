@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0F848F201813BE00D81796 /* AddViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F848E201813BE00D81796 /* AddViewControllerDelegate.swift */; };
+		CEED48D22017E68200731261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED48D12017E68200731261 /* AppDelegate.swift */; };
+		CEED48D42017E68200731261 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED48D32017E68200731261 /* CoursesViewController.swift */; };
+		CEED48D72017E68200731261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED48D52017E68200731261 /* Main.storyboard */; };
+		CEED48DA2017E68200731261 /* iCourses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEED48D82017E68200731261 /* iCourses.xcdatamodeld */; };
+		CEED48DC2017E68200731261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEED48DB2017E68200731261 /* Assets.xcassets */; };
+		CEED48DF2017E68200731261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED48DD2017E68200731261 /* LaunchScreen.storyboard */; };
+		CEED48EA2017E68200731261 /* iCoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED48E92017E68200731261 /* iCoursesTests.swift */; };
+		CEED48F52017E68200731261 /* iCoursesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED48F42017E68200731261 /* iCoursesUITests.swift */; };
+		CEED49032017F28E00731261 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED49022017F28E00731261 /* AddViewController.swift */; };
+		CEED49072017F35500731261 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED49062017F35500731261 /* CustomCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEED48E62017E68200731261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEED48C62017E68100731261 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEED48CD2017E68200731261;
+			remoteInfo = iCourses;
+		};
+		CEED48F12017E68200731261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEED48C62017E68100731261 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEED48CD2017E68200731261;
+			remoteInfo = iCourses;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE0F848E201813BE00D81796 /* AddViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewControllerDelegate.swift; sourceTree = "<group>"; };
+		CEED48CE2017E68200731261 /* iCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED48D12017E68200731261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEED48D32017E68200731261 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		CEED48D62017E68200731261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEED48D92017E68200731261 /* iCourses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCourses.xcdatamodel; sourceTree = "<group>"; };
+		CEED48DB2017E68200731261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEED48DE2017E68200731261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEED48E02017E68200731261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED48E52017E68200731261 /* iCoursesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCoursesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED48E92017E68200731261 /* iCoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCoursesTests.swift; sourceTree = "<group>"; };
+		CEED48EB2017E68200731261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED48F02017E68200731261 /* iCoursesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCoursesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED48F42017E68200731261 /* iCoursesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCoursesUITests.swift; sourceTree = "<group>"; };
+		CEED48F62017E68200731261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED49022017F28E00731261 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		CEED49062017F35500731261 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEED48CB2017E68200731261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48E22017E68200731261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48ED2017E68200731261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEED48C52017E68100731261 = {
+			isa = PBXGroup;
+			children = (
+				CEED48D02017E68200731261 /* iCourses */,
+				CEED48E82017E68200731261 /* iCoursesTests */,
+				CEED48F32017E68200731261 /* iCoursesUITests */,
+				CEED48CF2017E68200731261 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEED48CF2017E68200731261 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEED48CE2017E68200731261 /* iCourses.app */,
+				CEED48E52017E68200731261 /* iCoursesTests.xctest */,
+				CEED48F02017E68200731261 /* iCoursesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEED48D02017E68200731261 /* iCourses */ = {
+			isa = PBXGroup;
+			children = (
+				CEED48D52017E68200731261 /* Main.storyboard */,
+				CEED48D32017E68200731261 /* CoursesViewController.swift */,
+				CEED49022017F28E00731261 /* AddViewController.swift */,
+				CEED48D12017E68200731261 /* AppDelegate.swift */,
+				CEED48DB2017E68200731261 /* Assets.xcassets */,
+				CEED48DD2017E68200731261 /* LaunchScreen.storyboard */,
+				CEED48E02017E68200731261 /* Info.plist */,
+				CEED48D82017E68200731261 /* iCourses.xcdatamodeld */,
+				CEED49062017F35500731261 /* CustomCell.swift */,
+				CE0F848E201813BE00D81796 /* AddViewControllerDelegate.swift */,
+			);
+			path = iCourses;
+			sourceTree = "<group>";
+		};
+		CEED48E82017E68200731261 /* iCoursesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEED48E92017E68200731261 /* iCoursesTests.swift */,
+				CEED48EB2017E68200731261 /* Info.plist */,
+			);
+			path = iCoursesTests;
+			sourceTree = "<group>";
+		};
+		CEED48F32017E68200731261 /* iCoursesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEED48F42017E68200731261 /* iCoursesUITests.swift */,
+				CEED48F62017E68200731261 /* Info.plist */,
+			);
+			path = iCoursesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEED48CD2017E68200731261 /* iCourses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEED48F92017E68200731261 /* Build configuration list for PBXNativeTarget "iCourses" */;
+			buildPhases = (
+				CEED48CA2017E68200731261 /* Sources */,
+				CEED48CB2017E68200731261 /* Frameworks */,
+				CEED48CC2017E68200731261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCourses;
+			productName = iCourses;
+			productReference = CEED48CE2017E68200731261 /* iCourses.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEED48E42017E68200731261 /* iCoursesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEED48FC2017E68200731261 /* Build configuration list for PBXNativeTarget "iCoursesTests" */;
+			buildPhases = (
+				CEED48E12017E68200731261 /* Sources */,
+				CEED48E22017E68200731261 /* Frameworks */,
+				CEED48E32017E68200731261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEED48E72017E68200731261 /* PBXTargetDependency */,
+			);
+			name = iCoursesTests;
+			productName = iCoursesTests;
+			productReference = CEED48E52017E68200731261 /* iCoursesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEED48EF2017E68200731261 /* iCoursesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEED48FF2017E68200731261 /* Build configuration list for PBXNativeTarget "iCoursesUITests" */;
+			buildPhases = (
+				CEED48EC2017E68200731261 /* Sources */,
+				CEED48ED2017E68200731261 /* Frameworks */,
+				CEED48EE2017E68200731261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEED48F22017E68200731261 /* PBXTargetDependency */,
+			);
+			name = iCoursesUITests;
+			productName = iCoursesUITests;
+			productReference = CEED48F02017E68200731261 /* iCoursesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEED48C62017E68100731261 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CEED48CD2017E68200731261 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CEED48E42017E68200731261 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEED48CD2017E68200731261;
+					};
+					CEED48EF2017E68200731261 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEED48CD2017E68200731261;
+					};
+				};
+			};
+			buildConfigurationList = CEED48C92017E68100731261 /* Build configuration list for PBXProject "iCourses" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEED48C52017E68100731261;
+			productRefGroup = CEED48CF2017E68200731261 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEED48CD2017E68200731261 /* iCourses */,
+				CEED48E42017E68200731261 /* iCoursesTests */,
+				CEED48EF2017E68200731261 /* iCoursesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEED48CC2017E68200731261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED48DF2017E68200731261 /* LaunchScreen.storyboard in Resources */,
+				CEED48DC2017E68200731261 /* Assets.xcassets in Resources */,
+				CEED48D72017E68200731261 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48E32017E68200731261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48EE2017E68200731261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEED48CA2017E68200731261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED48D42017E68200731261 /* CoursesViewController.swift in Sources */,
+				CE0F848F201813BE00D81796 /* AddViewControllerDelegate.swift in Sources */,
+				CEED48D22017E68200731261 /* AppDelegate.swift in Sources */,
+				CEED49072017F35500731261 /* CustomCell.swift in Sources */,
+				CEED49032017F28E00731261 /* AddViewController.swift in Sources */,
+				CEED48DA2017E68200731261 /* iCourses.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48E12017E68200731261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED48EA2017E68200731261 /* iCoursesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEED48EC2017E68200731261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEED48F52017E68200731261 /* iCoursesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEED48E72017E68200731261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEED48CD2017E68200731261 /* iCourses */;
+			targetProxy = CEED48E62017E68200731261 /* PBXContainerItemProxy */;
+		};
+		CEED48F22017E68200731261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEED48CD2017E68200731261 /* iCourses */;
+			targetProxy = CEED48F12017E68200731261 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEED48D52017E68200731261 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEED48D62017E68200731261 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEED48DD2017E68200731261 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEED48DE2017E68200731261 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEED48F72017E68200731261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEED48F82017E68200731261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEED48FA2017E68200731261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCourses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEED48FB2017E68200731261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCourses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEED48FD2017E68200731261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCoursesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCoursesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCourses.app/iCourses";
+			};
+			name = Debug;
+		};
+		CEED48FE2017E68200731261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCoursesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCoursesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCourses.app/iCourses";
+			};
+			name = Release;
+		};
+		CEED49002017E68200731261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCoursesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCoursesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iCourses;
+			};
+			name = Debug;
+		};
+		CEED49012017E68200731261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iCoursesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.iCoursesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iCourses;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEED48C92017E68100731261 /* Build configuration list for PBXProject "iCourses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED48F72017E68200731261 /* Debug */,
+				CEED48F82017E68200731261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEED48F92017E68200731261 /* Build configuration list for PBXNativeTarget "iCourses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED48FA2017E68200731261 /* Debug */,
+				CEED48FB2017E68200731261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEED48FC2017E68200731261 /* Build configuration list for PBXNativeTarget "iCoursesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED48FD2017E68200731261 /* Debug */,
+				CEED48FE2017E68200731261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEED48FF2017E68200731261 /* Build configuration list for PBXNativeTarget "iCoursesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEED49002017E68200731261 /* Debug */,
+				CEED49012017E68200731261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEED48D82017E68200731261 /* iCourses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEED48D92017E68200731261 /* iCourses.xcdatamodel */,
+			);
+			currentVersion = CEED48D92017E68200731261 /* iCourses.xcdatamodel */;
+			path = iCourses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEED48C62017E68100731261 /* Project object */;
+}
